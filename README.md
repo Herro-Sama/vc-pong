@@ -17,3 +17,5 @@ Pair program on two machines
 ## Step 3
 
 Sync the code from the two local machines onto GitHub
+
+https://github.com/Herro-Sama/vc-pong/invitations
