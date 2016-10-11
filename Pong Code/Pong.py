@@ -13,23 +13,31 @@ pygame.display.set_caption('Pong')
 Black = (0, 0, 0)
 White = (255, 255, 255)
 
-Pong1 = pygame.draw.rect(window,White,(50, 50, 25, 100))
-Pong1.centerx = window.get_rect().centerx
-Pong1.centery = window.get_rect().centery
-
-Pong2 = pygame.draw.rect(window,White,(750, 50, 25, 100))
-Pong2.centerx = window.get_rect().centerx
-Pong2.centery = window.get_rect().centery
+Y1 = 50
+Y2 = 50
 
 while True:
+
+    Pong1 = pygame.draw.rect(window, White, (50, Y1, 25, 100))
+    Pong2 = pygame.draw.rect(window, White, (750, Y2, 25, 100))
+
     for event in pygame.event.get():
         if event.type == QUIT:
             pygame.quit()
             sys.exit()
         if event.type == pygame.KEYDOWN:
             if event.key == pygame.K_w:
-                print("Working W")
+                Y1 = Y1 - 50
+
 
             if event.key == pygame.K_s:
-                print("Working S")
+                Y1 = Y1 + 50
+
+
+            if event.key == pygame.K_UP:
+                Y2 = Y2 - 50
+
+            if event.key == pygame.K_DOWN:
+                Y2 = Y2 + 50
+
     pygame.display.update()
