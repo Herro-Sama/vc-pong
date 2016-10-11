@@ -26,4 +26,10 @@ while True:
         if event.type == QUIT:
             pygame.quit()
             sys.exit()
+        if event.type == pygame.KEYDOWN:
+            if event.key == pygame.K_w:
+                print("Working W")
+
+            if event.key == pygame.K_s:
+                print("Working S")
     pygame.display.update()
