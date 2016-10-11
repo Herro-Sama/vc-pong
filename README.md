@@ -19,3 +19,5 @@ Pair program on two machines
 Sync the code from the two local machines onto GitHub
 
 https://github.com/Herro-Sama/vc-pong/invitations
+
+I Have Arrived
