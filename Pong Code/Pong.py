@@ -17,7 +17,7 @@ Pong1 = pygame.draw.rect(window,White,(50, 50, 25, 100))
 Pong1.centerx = window.get_rect().centerx
 Pong1.centery = window.get_rect().centery
 
-Pong2 = pygame.draw.rect(window,White,(50, 50, 25, 100))
+Pong2 = pygame.draw.rect(window,White,(750, 50, 25, 100))
 Pong2.centerx = window.get_rect().centerx
 Pong2.centery = window.get_rect().centery
 
